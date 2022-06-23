@@ -8,8 +8,9 @@ export function MovieInfo() {
         <p>IMDB: 7/10</p>
       </div>
       <div className="AboutMovie">
-        <h3>Título do filme</h3>
+        <h3>Título do filme (Ano)</h3>
         <p>Sinopse do filme</p>
+        <p>Atores: </p>
       </div>
     </section>
   );
