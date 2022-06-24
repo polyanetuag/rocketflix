@@ -1,5 +1,5 @@
 
-import { Head } from './pages/Head'
+import { Head } from './components/Head'
 import './App.css'
 import { MovieInfo } from './pages/MovieInfo'
 
