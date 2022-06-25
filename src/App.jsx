@@ -1,7 +1,7 @@
 
 import { Head } from './components/Head'
 import './App.css'
-import { MovieInfo } from './pages/MovieInfo'
+import MovieInfo from './pages/MovieInfo'
 
 function App() {
 
