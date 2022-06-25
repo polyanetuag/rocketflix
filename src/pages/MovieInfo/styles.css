@@ -14,13 +14,16 @@
 
 .ImgMovie img {
   display: block;
-  width: 80%;
+  width: 65%;
   object-fit: cover;
   margin: 0 auto;
+  border-radius: 5px;
 }
 
 .ImgMovie p {
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: start;
   font-size: 14px;
   margin: 10px auto;
@@ -39,5 +42,18 @@
 
 .AboutMovie h3 {
   font-weight: 700;
-  margin-bottom: 10px;
+  margin-bottom: 22px;
+  font-size: 20px;
+}
+
+.AboutMovie p {
+  font-size: 14px;
+  margin-bottom: 16px;
+  color: #ccc;
+}
+
+.AboutMovie span {
+  font-size: 14px;
+  margin-bottom: 12px;
+  color: #ddd;
 }
