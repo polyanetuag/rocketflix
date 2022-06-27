@@ -1,9 +1,9 @@
 .ContentMovie {
-  width: 800px;
+  width: 850px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin-top: 20px;
-
+  grid-template-columns: 275px 1fr;
+  margin: 30px auto;
+  gap: 20px;
 }
 
 .ImgMovie {
@@ -14,7 +14,7 @@
 
 .ImgMovie img {
   display: block;
-  width: 65%;
+  width: 90%;
   object-fit: cover;
   margin: 0 auto;
   border-radius: 5px;
@@ -44,6 +44,7 @@
   font-weight: 700;
   margin-bottom: 22px;
   font-size: 20px;
+  color: rgb(252, 131, 51);
 }
 
 .AboutMovie p {
@@ -57,3 +58,25 @@
   margin-bottom: 12px;
   color: #ddd;
 }
+
+/* @media (max-width: 768px) {
+  .ContentMovie {
+    grid-template-columns: 1fr;
+  }
+
+  .AboutMovie {
+    margin-left: 0;
+  }
+
+  .ImgMovie img {
+    width: 100%;
+  }
+
+  .ImgMovie p {
+    margin: 0;
+  }
+
+  .AboutMovie h3 {
+    font-size: 18px;
+  }
+} */
