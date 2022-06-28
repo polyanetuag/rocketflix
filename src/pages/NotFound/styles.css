@@ -1,0 +1,42 @@
+.ContentNotFound {
+  width: 850px;
+  display: grid;
+  grid-template-columns: 275px 1fr;
+  margin: 30px auto;
+  gap: 20px;
+}
+
+.ImgNotFound {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.ImgNotFound img {
+  display: block;
+  width: 90%;
+  object-fit: cover;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+
+.CodeDay {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+}
+
+.CodeDay p {
+  font-size: 16px;
+  margin-bottom: 16px;
+  color: #ccc;
+}
+
+.CodeDay span {
+  font-size: 18px;
+  margin-bottom: 12px;
+  color: #ddd;
+}
