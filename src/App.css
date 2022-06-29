@@ -28,6 +28,20 @@ body {
   background-attachment: fixed;
 }
 
+button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg-button);
+  border-radius: 5px;
+  color: #333;
+  padding: 10px 14px;
+  font-weight: 700;
+  font-size: 12px;
+  cursor: pointer;
+  transition: 0.4s ease;
+  text-decoration: none;
+}
 /* #root {
   
   height: 100vh;
