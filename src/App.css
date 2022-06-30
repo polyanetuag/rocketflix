@@ -11,7 +11,7 @@
   box-sizing: border-box;
 }
 
-body,
+body, html,
 #root {
   font-family: "Poppins", sans-serif;
   font-size: 16px;
@@ -46,3 +46,20 @@ button {
   
   height: 100vh;
 } */
+
+@media (max-width: 40rem) {
+  body {
+    background-size: cover;
+    background-position: center;
+  }
+
+  #root,html {
+    height: 100vh;
+    width: max-content;
+
+
+
+
+
+  }
+}
