@@ -1,18 +1,33 @@
 .Head {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding-top: 6rem;
-   
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 6rem;
 }
 
 .Head img {
-    width: 4rem;  
+  width: 4rem;
 }
 
 .Head h1 {
-    font-size: 2.5rem;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 40rem) {
+  .Head {
+    padding-top: 6rem;
+  }
+
+  .Head img {
+    width: 8rem;
+  }
+
+  .Head h1 {
+    font-size: 3rem;
     font-weight: 700;
     margin-bottom: 1rem;
+  }
 }
