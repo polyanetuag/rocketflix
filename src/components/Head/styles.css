@@ -18,15 +18,16 @@
 
 @media (max-width: 40rem) {
   .Head {
-    padding-top: 6rem;
+    padding-top: 4rem;
+    
   }
 
   .Head img {
-    width: 8rem;
+    max-width: max-content;
   }
 
   .Head h1 {
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 700;
     margin-bottom: 1rem;
   }
