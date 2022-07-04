@@ -3,17 +3,18 @@ import { Head } from "../../components/Head";
 import { Logo } from "../../components/Logo";
 import NotFound from "../NotFound";
 
-
 import "./styles.css";
 
 function MovieInfo() {
   const [movie, setMovie] = useState();
   const randomNumber = Math.floor(Math.random() * 100);
-  console.log('env', import.meta.env.VITE_BASE_URL);
+  console.log("env", import.meta.env.VITE_BASE_URL);
 
   async function Movie() {
     const response = await fetch(
-      `${import.meta.env.VITE_BASE_URL}${randomNumber}?${import.meta.env.VITE_API_KEY}&language=pt-BR`
+      `${import.meta.env.VITE_BASE_URL}${randomNumber}?${
+        import.meta.env.VITE_API_KEY
+      }&language=pt-BR`
     );
     const data = await response.json();
     setMovie(data);
@@ -54,53 +55,103 @@ function MovieInfo() {
               <img
                 src={`https://image.tmdb.org/t/p/w500/${movie?.poster_path}`}
                 alt="Poster do filme"
-                // sizes="(max-width: 480px) 280px"
               />
             ) : (
               <img
                 src="src/Assets/popcorn.jpeg"
                 alt="Computador com código na tela"
+                
               />
             )}
-
-            <p>IMDB:</p> <span>{`${round(movie?.vote_average).toFixed(1)}/10`}</span>
           </div>
           <div className="AboutMovie">
-            <h3>{`${movie?.title} (${formatDate(movie?.release_date)}) `}</h3>
-            <p>{movie?.overview ? movie?.overview : "Sem descrição"}</p>
-            <span>
-              {movie?.genres[0]?.name
-                ? `Gênero: ${movie?.genres[0]?.name}`
-                : "Gênero: ---"}
-            </span>
-            <span>
-              {movie?.runtime
-                ? `Duração: ${formatMinutes(movie?.runtime)}`
-                : "Duração: ---"}
-            </span>
-            <span>
-              {movie?.tagline ? `Tags: ${movie?.tagline}` : "Tags: ---"}
-            </span>
+            <h3>{`${movie?.title} (${formatDate(movie?.release_date)})`}</h3>
+            
+            <p>{movie?.overview ? movie?.overview : "Não informado."}</p>
+            <p>
+              Gênero:
+              {movie?.genres?.map((genre) => (
+                <span key={genre.id}>
+                  <span>{genre.name}.</span>
+                </span>
+              ))}
+            </p>
+
+            <p>
+              Avaliação do IMDB:
+              <span>{`${round(movie?.vote_average).toFixed(1)}/10`}</span>
+            </p>
+
+            {movie?.runtime ? (
+              <p>
+                Duração: <span>{formatMinutes(movie?.runtime)}</span>
+              </p>
+            ) : (
+              <p>
+                Duração: <span>Não informado.</span>
+              </p>
+            )}
+
+            {movie?.tagline ? (
+              <p>
+                Tagline: <span>{movie?.tagline}</span>
+              </p>
+            ) : (
+              <p>
+                Tagline: <span>Não informado.</span>
+              </p>
+            )}
+
+            <button
+              onClick={() => {
+                movie.title ? Movie() : <NotFound />;
+              }}
+            >
+              <Logo />
+              Encontrar filme
+            </button>
+            <p>
+              Clique em "Encontrar filme" que traremos informações de algum
+              filme para você assistir hoje.
+            </p>
           </div>
         </section>
-        <div className="ButtonContainer">
-          <button
-            onClick={() => {
-              movie.title ? Movie() : <NotFound />;
-            }}
-          >
-            <Logo />
-            Encontrar filme
-          </button>
-          <p>
-            Clique em "Encontrar filme" que traremos informações de algum filme
-            para você assistir hoje.
-          </p>
-        </div>
       </>
     );
   } else {
-    return <NotFound />;
+    return (
+      <>
+        <Head />
+        <section className="ContentMovie">
+          <div className="ContentImgMovie">
+            <img
+              src="src/Assets/codeDay.jpeg"
+              alt="Computador com código na tela"
+              style={{ width: "100%", height: "100%" }}
+            />
+          </div>
+          <div className="AboutMovie">
+            <p>Ops, hoje não é dia de assistir filme.</p>
+            <span>Bora codar! 🚀</span>
+            
+              <button
+                onClick={() => {
+                  movie.title ? Movie() : <NotFound />;
+                }}
+              >
+                <Logo />
+                Encontrar filme
+              </button>
+              <p>
+                Clique em "Encontrar filme" que traremos informações de algum
+                filme para você assistir hoje.
+              </p>
+            </div>
+            {/* <Button /> */}
+          
+        </section>
+      </>
+    );
   }
 }
 
