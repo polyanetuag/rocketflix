@@ -49,11 +49,12 @@ function MovieInfo() {
       <>
         <Head />
         <section className="ContentMovie">
-          <div className="ImgMovie">
+          <div className="ContentImgMovie">
             {movie?.poster_path ? (
               <img
                 src={`https://image.tmdb.org/t/p/w500/${movie?.poster_path}`}
                 alt="Poster do filme"
+                // sizes="(max-width: 480px) 280px"
               />
             ) : (
               <img
@@ -62,7 +63,7 @@ function MovieInfo() {
               />
             )}
 
-            <p>{`IMDB: ${round(movie?.vote_average).toFixed(1)}/10`}</p>
+            <p>IMDB:</p> <span>{`${round(movie?.vote_average).toFixed(1)}/10`}</span>
           </div>
           <div className="AboutMovie">
             <h3>{`${movie?.title} (${formatDate(movie?.release_date)}) `}</h3>
