@@ -1,8 +1,4 @@
-// import "./styles.css";
-
-
-
-export function Logo({ }) {
+export function Logo({}) {
   return (
     <div className="SVGContainer">
       <svg
