@@ -67,7 +67,7 @@ function MovieInfo() {
           <div className="AboutMovie">
             <h3>{`${movie?.title} (${formatDate(movie?.release_date)})`}</h3>
             
-            <p>{movie?.overview ? movie?.overview : "Não informado."}</p>
+            <p>{movie?.overview ? movie?.overview : "Descrição não informada."}</p>
             <p>
               Gênero:
               {movie?.genres?.map((genre) => (
@@ -122,21 +122,20 @@ function MovieInfo() {
     return (
       <>
         <Head />
-        <section className="ContentMovie">
-          <div className="ContentImgMovie">
+        <section className="ContentCodeDay">
+          
             <img
               src="src/Assets/codeDay.jpeg"
               alt="Computador com código na tela"
-              style={{ width: "100%", height: "100%" }}
             />
-          </div>
-          <div className="AboutMovie">
+          
+          <div className="AboutCodeDay">
             <p>Ops, hoje não é dia de assistir filme.</p>
             <span>Bora codar! 🚀</span>
             
               <button
                 onClick={() => {
-                  movie.title ? Movie() : <NotFound />;
+                  Movie()
                 }}
               >
                 <Logo />
