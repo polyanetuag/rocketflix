@@ -1,7 +1,6 @@
 .ContentMovie {
   display: flex;
   padding: 0 150px;
-  /* flex-wrap: wrap; */
   gap: 50px;
   margin-top: 30px;
 }
@@ -27,7 +26,6 @@
   align-items: start;
   width: 100%;
   height: auto;
-  /* margin-left: 20px; */
 }
 
 .AboutMovie h3 {
@@ -46,7 +44,6 @@
 .AboutMovie span {
   font-size: 14px;
   margin-bottom: 12px;
-  color: #ddd;
   color: rgb(250, 122, 36);
   font-weight: 700;
 }
@@ -59,7 +56,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 32px auto;
+  margin: 32px auto 12px;
   background: var(--bg-button);
   border-radius: 5px;
   color: #333;
@@ -92,14 +89,52 @@
   margin: 0 auto;
 }
 
-/* .ButtonContainer {
+.ContentCodeDay {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
   text-align: center;
-  margin-top: 22px;
-} */
+  width: 100%;
+  height: auto;
+}
+
+.ContentCodeDay img {
+  display: block;
+  max-width: 30%;
+  max-height: 100%;
+  object-fit: contain;
+  border-radius: 5px;
+  margin: 3px 80px;
+}
+
+.AboutCodeDay {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+}
+
+.AboutCodeDay p {
+  font-size: 14px;
+  margin-bottom: 16px;
+  color: #ddd;
+  padding-top: 12px;
+}
+
+.AboutCodeDay span {
+  font-size: 16px;
+  margin-bottom: 12px;
+  color: rgb(250, 122, 36);
+  font-weight: 700;
+}
+
+.AboutCodeDay button {
+  padding: 6px 32px;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+}
 
 @media (max-width: 40rem) {
   .ContentImgMovie {
@@ -138,7 +173,7 @@
     font-size: 18px;
   }
 
-  .ButtonContainer {
+  /* .ButtonContainer {
     padding: 20px 90px;
     margin-bottom: 20px;
   }
@@ -148,5 +183,5 @@
     height: 40px;
     font-size: 18px;
     padding: 30px;
-  }
+  } */
 }
