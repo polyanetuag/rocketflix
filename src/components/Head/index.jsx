@@ -7,7 +7,7 @@ export function Head() {
       <NavLink to="/">
         <img
           className=""
-          src="src/Assets/shuffle.svg"
+          src="public/assets/shuffle.svg"
           alt="Ícone de aleatório"
         />
       </NavLink>

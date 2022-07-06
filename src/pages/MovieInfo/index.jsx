@@ -54,7 +54,7 @@ function MovieInfo() {
               />
             ) : (
               <img
-                src="src/Assets/popcorn.jpeg"
+                src="public/assets/popcorn.jpeg"
                 alt="Computador com código na tela"
               />
             )}
@@ -121,7 +121,7 @@ function MovieInfo() {
         <Head />
         <section className="ContentCodeDay">
           <img
-            src="src/Assets/codeDay.jpeg"
+            src="public/assets/codeDay.jpeg"
             alt="Computador com código na tela"
           />
 
@@ -133,6 +133,7 @@ function MovieInfo() {
               onClick={() => {
                 Movie();
               }}
+              
             >
               <Logo />
               Encontrar filme
