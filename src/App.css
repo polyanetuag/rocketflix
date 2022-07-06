@@ -1,7 +1,9 @@
 :root {
   --title: #fffcf9;
   --subtitle: #ddd;
+  --details: rgb(250, 122, 36);
   --bg-button: #e9e6e3;
+  --color-button: #333;
   --background: linear-gradient(43deg, #102d71 0%, #000000 52%, #c12a23 100%);
 }
 
@@ -22,7 +24,7 @@ html,
 
 body {
   background: var(--background);
-  color: #fffcf9;
+  color: var(--title);
   height: 100%;
   margin: 0;
   background-repeat: no-repeat;
@@ -35,7 +37,7 @@ button {
   justify-content: center;
   background: var(--bg-button);
   border-radius: 5px;
-  color: #333;
+  color: var(--color-button);
   padding: 10px 14px;
   font-weight: 700;
   font-size: 12px;

@@ -32,19 +32,19 @@
   font-weight: 700;
   margin-bottom: 22px;
   font-size: 20px;
-  color: rgb(250, 122, 36);
+  color: var(--details);
 }
 
 .AboutMovie p {
   font-size: 14px;
   margin-bottom: 16px;
-  color: #ddd;
+  color: var(--subtitle);
 }
 
 .AboutMovie span {
   font-size: 14px;
   margin-bottom: 12px;
-  color: rgb(250, 122, 36);
+  color: var(--details);
   font-weight: 700;
 }
 
@@ -59,7 +59,7 @@
   margin: 32px auto 12px;
   background: var(--bg-button);
   border-radius: 5px;
-  color: #333;
+  color: var(--color-button);
   padding: 10px 14px;
   font-weight: 700;
   font-size: 12px;
@@ -99,7 +99,7 @@
 
 .ContentCodeDay img {
   display: block;
-  max-width: 30%;
+  max-width: 28%;
   max-height: 100%;
   object-fit: contain;
   border-radius: 5px;
@@ -111,21 +111,20 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  height: auto;
+  
 }
 
 .AboutCodeDay p {
   font-size: 14px;
   margin-bottom: 16px;
-  color: #ddd;
+  color: var(--subtitle);
   padding-top: 12px;
 }
 
 .AboutCodeDay span {
   font-size: 16px;
   margin-bottom: 12px;
-  color: rgb(250, 122, 36);
+  color: var(--details);
   font-weight: 700;
 }
 
@@ -172,16 +171,5 @@
   .AboutMovie span {
     font-size: 18px;
   }
-
-  /* .ButtonContainer {
-    padding: 20px 90px;
-    margin-bottom: 20px;
-  }
-
-  .ButtonContainer button {
-    width: 80%;
-    height: 40px;
-    font-size: 18px;
-    padding: 30px;
-  } */
+  
 }
