@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import { Head } from "../../components/Head";
 import { Logo } from "../../components/Logo";
-import NotFound from "../NotFound";
 
 import "./styles.css";
 
@@ -26,19 +25,16 @@ function MovieInfo() {
 
   console.log("movie", movie);
 
-  // formatar data de lançamento só para exibir o ano
   const formatDate = (date) => {
     const newDate = new Date(date);
     const year = newDate.getFullYear();
     return year;
   };
 
-  //arredondar nota do filme para mais
   const round = (num) => {
     return Math.round(num * 10) / 10;
   };
 
-  //formatar minutos para exibir no formato h min
   const formatMinutes = (minutes) => {
     const hour = Math.floor(minutes / 60);
     const minute = minutes % 60;
@@ -60,14 +56,15 @@ function MovieInfo() {
               <img
                 src="src/Assets/popcorn.jpeg"
                 alt="Computador com código na tela"
-                
               />
             )}
           </div>
           <div className="AboutMovie">
             <h3>{`${movie?.title} (${formatDate(movie?.release_date)})`}</h3>
-            
-            <p>{movie?.overview ? movie?.overview : "Descrição não informada."}</p>
+
+            <p>
+              {movie?.overview ? movie?.overview : "Descrição não informada."}
+            </p>
             <p>
               Gênero:
               {movie?.genres?.map((genre) => (
@@ -104,7 +101,7 @@ function MovieInfo() {
 
             <button
               onClick={() => {
-                movie.title ? Movie() : <NotFound />;
+                Movie()
               }}
             >
               <Logo />
@@ -123,31 +120,28 @@ function MovieInfo() {
       <>
         <Head />
         <section className="ContentCodeDay">
-          
-            <img
-              src="src/Assets/codeDay.jpeg"
-              alt="Computador com código na tela"
-            />
-          
+          <img
+            src="src/Assets/codeDay.jpeg"
+            alt="Computador com código na tela"
+          />
+
           <div className="AboutCodeDay">
             <p>Ops, hoje não é dia de assistir filme.</p>
             <span>Bora codar! 🚀</span>
-            
-              <button
-                onClick={() => {
-                  Movie()
-                }}
-              >
-                <Logo />
-                Encontrar filme
-              </button>
-              <p>
-                Clique em "Encontrar filme" que traremos informações de algum
-                filme para você assistir hoje.
-              </p>
-            </div>
-            {/* <Button /> */}
-          
+
+            <button
+              onClick={() => {
+                Movie();
+              }}
+            >
+              <Logo />
+              Encontrar filme
+            </button>
+            <p>
+              Clique em "Encontrar filme" que traremos informações de algum
+              filme para você assistir hoje.
+            </p>
+          </div>
         </section>
       </>
     );
