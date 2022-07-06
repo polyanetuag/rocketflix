@@ -130,9 +130,20 @@
 
 .AboutCodeDay button {
   padding: 6px 32px;
-  font-size: 14px;
   font-weight: 700;
   cursor: pointer;
+}
+
+.AboutCodeDay svg {
+  display: inline-block;
+  width: 35px;
+  height: 25px;
+  margin-right: 16px;
+}
+
+.AboutCodeDay button:hover,
+.AboutCodeDay button:focus {
+  filter: brightness(0.9);
 }
 
 @media (max-width: 40rem) {
