@@ -1,6 +1,6 @@
 :root {
   --title: #fffcf9;
-  --subtitle: #b3b3b3;
+  --subtitle: #ddd;
   --bg-button: #e9e6e3;
   --background: linear-gradient(43deg, #102d71 0%, #000000 52%, #c12a23 100%);
 }
@@ -11,7 +11,8 @@
   box-sizing: border-box;
 }
 
-body, html,
+body,
+html,
 #root {
   font-family: "Poppins", sans-serif;
   font-size: 16px;
@@ -41,25 +42,4 @@ button {
   cursor: pointer;
   transition: 0.4s ease;
   text-decoration: none;
-}
-/* #root {
-  
-  height: 100vh;
-} */
-
-@media (max-width: 40rem) {
-  body {
-    background-size: cover;
-    background-position: center;
-  }
-
-  #root,html {
-   
-    width: fit-content;
-
-
-
-
-
-  }
 }
