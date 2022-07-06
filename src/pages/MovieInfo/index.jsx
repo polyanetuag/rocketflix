@@ -121,7 +121,7 @@ function MovieInfo() {
         <Head />
         <section className="ContentCodeDay">
           <img
-            src="public/assets/codeDay.jpeg"
+            src="/assets/codeDay.jpeg"
             alt="Computador com código na tela"
           />
 
