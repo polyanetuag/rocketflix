@@ -39,6 +39,8 @@ $ yarn dev
 # O servidor será inicializado em <http://localhost:3000>
 ```
 
+❗️Para usar a API do <a>themoviedb.org</a>, é necessário criar uma conta no <a>https://www.themoviedb.org/signup</a>
+
 ## 📝 Licença
 
 Esse projeto está sob a licença MIT.
