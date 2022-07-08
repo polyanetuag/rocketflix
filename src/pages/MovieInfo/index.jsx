@@ -41,10 +41,10 @@ function MovieInfo() {
     return `${hour}h ${minute}min`;
   };
 
-  if (movie?.title) {
-    return (
-      <>
-        <Head />
+  return (
+    <>
+      <Head />
+      {movie.title ? (
         <section className="ContentMovie">
           <div className="ContentImgMovie">
             {movie?.poster_path ? (
@@ -101,7 +101,7 @@ function MovieInfo() {
 
             <button
               onClick={() => {
-                Movie()
+                Movie();
               }}
             >
               <Logo />
@@ -113,17 +113,9 @@ function MovieInfo() {
             </p>
           </div>
         </section>
-      </>
-    );
-  } else {
-    return (
-      <>
-        <Head />
+      ) : (
         <section className="ContentCodeDay">
-          <img
-            src="/assets/codeDay.jpeg"
-            alt="Computador com código na tela"
-          />
+          <img src="/assets/codeDay.jpeg" alt="Computador com código na tela" />
 
           <div className="AboutCodeDay">
             <p>Ops, hoje não é dia de assistir filme.</p>
@@ -133,7 +125,6 @@ function MovieInfo() {
               onClick={() => {
                 Movie();
               }}
-              
             >
               <Logo />
               Encontrar filme
@@ -144,9 +135,9 @@ function MovieInfo() {
             </p>
           </div>
         </section>
-      </>
-    );
-  }
+      )}
+    </>
+  );
 }
 
 export default MovieInfo;
