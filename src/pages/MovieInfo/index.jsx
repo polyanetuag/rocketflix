@@ -40,10 +40,12 @@ function MovieInfo() {
     const minute = minutes % 60;
     return `${hour}h ${minute}min`;
   };
-
+  
+//fazer um loading
   return (
     <>
       <Head />
+      
       {movie.title ? (
         <section className="ContentMovie">
           <div className="ContentImgMovie">
