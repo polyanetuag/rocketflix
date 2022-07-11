@@ -42,6 +42,10 @@ function MovieInfo() {
   };
   
 //fazer um loading
+  if (!movie) {
+    return <div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>
+  }
+
   return (
     <>
       <Head />
