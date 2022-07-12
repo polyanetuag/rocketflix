@@ -19,7 +19,7 @@ O projeto tem como objetivo consumir uma api de filmes para ajudar na escolha de
 ## 🚀 Tecnologias utilizadas:
 
 - ReactJS
-- CSS
+- CSS puro
 
 ## ⏱ Como executar
 
@@ -34,7 +34,7 @@ $ cd rocketflix
 $ yarn
 
 # Iniciar o servidor
-$ yarn dev
+$ yarn dev ou npm run dev
 
 # O servidor será inicializado em <http://localhost:3000>
 ```
