@@ -202,8 +202,8 @@
   }
 }
 
-
-@media (max-width: 40rem) {
+/* fazer responsivo */
+/* @media (max-width: 40rem) {
   .ContentImgMovie {
     width: 100%;
     height: auto;
@@ -240,4 +240,4 @@
     font-size: 18px;
   }
   
-}
+} */
