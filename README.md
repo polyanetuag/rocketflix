@@ -20,6 +20,7 @@ O projeto tem como objetivo consumir uma api de filmes para ajudar na escolha de
 
 - ReactJS
 - CSS puro
+- API do themoviedb
 
 ## ⏱ Como executar
 
