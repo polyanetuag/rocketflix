@@ -1,6 +1,6 @@
 <div align="center">
+  <h1><b>Rocketflix<b></h1>
   <img justify-content="center" width= '800' src="./public/assets/gifRocketflix.gif" />
-  <h1 >Rocketflix</h1>
 </div>
 
 <h3 align="center">  
