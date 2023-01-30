@@ -14,7 +14,9 @@
 
 ## 📚 Sobre
 
-O projeto tem como objetivo ajudar na escolha de um filme para assistir, consumindo uma api de filmes externa.
+O projeto consiste em ajudar na escolha de um filme para assistir, consumindo uma api de filmes externa.
+
+
 
 ## 🚀 Tecnologias utilizadas:
 
