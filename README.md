@@ -16,7 +16,7 @@
 
 O projeto consiste em ajudar na escolha de um filme para assistir, consumindo uma api de filmes externa.
 
-O objetivo foi a prática de integração de uma api externa.
+O objetivo foi a prática em React com integração de uma api externa.
 
 ## 🚀 Tecnologias utilizadas:
 
