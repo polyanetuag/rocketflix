@@ -22,7 +22,7 @@ O objetivo foi a prática em React com integração de uma api externa.
 
 - ReactJS
 - CSS puro
-- API do themoviedb
+- API do themoviedb.org
 
 ## ⏱ Como executar
 
