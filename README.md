@@ -24,7 +24,7 @@ O objetivo foi a prática em React com integração de uma api externa.
 - CSS puro
 - API do themoviedb.org
 
-## ⏱ Como executar
+## ⏱️ Como executar
 
 ```bash
 # Clonar o repositório
