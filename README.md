@@ -17,7 +17,7 @@
 
 O projeto consiste em ajudar na escolha de um filme para assistir, consumindo uma api de filmes externa. 
 
-Funciona de forma randômica e traz informações variadas como sinopse, gênero, ano do filme, classificação no IMDB, etc.
+Funciona de forma randômica e traz informações variadas dos filmes como sinopse, gênero, ano do filme, classificação no IMDB, etc.
 
 O objetivo foi praticar a integração de uma api externa utilizando React.
 
