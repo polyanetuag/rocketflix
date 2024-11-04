@@ -25,7 +25,7 @@ O objetivo foi praticar a integração de uma api externa utilizando ReactJs.
 
 - [ReactJS](https://react.dev/)
 - [CSS puro](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
-- API do themoviedb.org
+- API do [themoviedb](https://developer.themoviedb.org/reference/intro/getting-started)
 
 ## ⏱️ Como executar
 
