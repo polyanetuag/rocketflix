@@ -23,7 +23,7 @@ O objetivo foi praticar a integração de uma api externa utilizando ReactJs.
 
 ## 🚀 Tecnologias utilizadas:
 
-- ReactJS
+- [ReactJS](https://react.dev/)
 - CSS puro
 - API do themoviedb.org
 
