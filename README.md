@@ -45,7 +45,7 @@ $ yarn dev ou npm run dev
 # O servidor será inicializado em <http://localhost:3000 ou similar>
 ```
 
-❗️ATENÇÃO❗️ Para usar a API do <a>themoviedb.org</a>, é necessário criar uma conta no <a>https://www.themoviedb.org/signup</a>
+❗️ATENÇÃO❗️ Para usar a API do <a>themoviedb.org</a>, é necessário criar uma conta no [themoviedb](https://www.themoviedb.org/login)
 
 ## 📝 Licença
 
