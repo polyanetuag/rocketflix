@@ -1,6 +1,6 @@
 <div align="center">
   <h1><b>Rocketflix<b> 🎥 </h1>
-  <h2>Plataforma para escolher filmes para assistir </h2>
+  <h2>Plataforma de escolha de filmes para assistir </h2>
   <img justify-content="center" width= '800' src="./public/assets/gifRocketflix.gif" />
 </div>
 
