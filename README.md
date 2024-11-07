@@ -42,7 +42,7 @@ $ yarn dev ou npm run dev
 
 ```
 
-❗️ATENÇÃO❗️ Para usar a API do <a>themoviedb.org</a>, é necessário criar uma conta no [themoviedb](https://www.themoviedb.org/login)
+❗️ATENÇÃO❗️ Para usar a API do <a>themoviedb.org</a>, é necessário criar uma conta no site [themoviedb](https://www.themoviedb.org/login)
 
 ## 📝 Licença
 
